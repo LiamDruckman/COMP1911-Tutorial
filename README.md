@@ -37,7 +37,8 @@ Let's say you open up your terminal into your home directory and you want to kno
 
 ```bash
 $ ls
-COMP1911  Documents  Music     Practice  Templates               Desktop   Downloads  Pictures  Public    Videos
+COMP1911  Documents  Music     Practice  Templates
+Desktop   Downloads  Pictures  Public    Videos
 ```
 
 This command (short for "list") shows all non-hidden files and directories in the current directory. In this case they all happen to be directories so let's change to the Desktop directory and run "ls" again.
