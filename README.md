@@ -21,7 +21,7 @@ Note: This cheatsheet has more of a focus on learning C content (read this top t
 
 ## Linux/Shell Commands
 
-Linux is an operating system developed by Linus Torvalds (you can probably tell where the name came from) and places a much greater emphasis on using command line tools to perform operations. If you're primarily a mac user, you may be in luck as both Linux and MacOS are "Unix-like" and share a lot of similarities. For Windows users however, it may be a slightly larger leap to get used to it. But regardless, once you've got a few basic commands under your belt, you'll find Linux is not nearly as mistifying as it once seemed.
+Linux is an operating system developed by Linus Torvalds (you can probably tell where the name came from) and places a much greater emphasis on using command line tools to perform operations. If you're primarily a mac user, you may be in luck as both Linux and MacOS are "Unix-like" and share a lot of similarities. For Windows users however, it may be a slightly larger leap to get used to it. But regardless, once you've got a few basic commands under your belt, you'll find Linux is not nearly as mystifying as it once seemed.
 
 ### Navigation
 
@@ -31,7 +31,7 @@ In Linux the highest level of directory is called the root directory which has t
 
 The one we are most concerned with, however, is your home directory. This is the directory that you will start in when you open up your terminal window. It has a full path name starting from the root directory along the lines of "/import/adams/3/z5309229" but it is also assigned a special name: "~".
 
-Additionally, the command prompt in the terminal usually ends with a "``$``" or "``%``" so I will indicate that a command is being written in the terminal by starting the line with "``$``". Any output will be written straight afterwards without the "``$``".
+Additionally, the command prompt in the terminal usually ends with a ``$`` or ``%`` to show where you write your commands so I will indicate that a command is being written in the terminal by starting the line with ``$``. Any output will be written straight afterwards without the ``$``.
 
 Let's say you open up your terminal into your home directory and you want to know what files and directories are here. You would use the "ls" command and receive output something along these lines:
 
@@ -53,7 +53,7 @@ As you can see, we can use the "cd" command to change directories (I'm sure you 
 
 Now, if we want to go back up one directory we can use the "cd" command again. But this time the name of the directory isn't so obvious. We call the directory one level above the parent directory and it has a special name in Linux: "..". In the same vein we refer to our current directory using ".".
 
-To demonstrate this We'll introduce another command called "pwd" which stands for print working directory. This gives us the path of the directory we're currently in.
+To demonstrate this we'll introduce another command called "pwd" which stands for print working directory. This gives us the path of the directory we're currently in.
 
 ```bash
 # Show our current directory
@@ -156,7 +156,9 @@ $ cd ..
 $ ls
 lab01  tute01  tute02
 
-# We add the -r flag to rm to make it recursive so that it can delete the directory
+# Adding "-r" after rm makes the command recursive. This means that it
+# goes into the directory and deletes all of its files and
+# subdirectories first before deleting the directory itself
 $ rm -r tute02
 $ ls
 lab01  tute01
@@ -173,13 +175,13 @@ This is the probably the most commonly used data type in any language, and that 
 int number;
 ```
 
-However, this leaves the variable uninitialised which can be dangerous if we try to access it. This can cause issues in our programs so we try to always give it a default value of some sort, usually 0 but that is simply convention and your needs may change.
+However, this leaves the variable uninitialised (without any value assigned to it) which can be problematic if we try to use it. This can cause issues in our programs so we try to always give it a default value of some sort, usually 0 but that is simply convention and your needs may change.
 ```C
 int number = 0;
 ```
 ### Char
 
-This is the next most common data type in C and again as the name suggests it stores characters. It can be any one of the characters defined by the [American Standard Code for Information Interchange](https://www.ascii-code.com/) (ASCII). If you ever want to have a look at it just type "ascii" in your terminal.
+This is the next most common data type in C, and again, as the name suggests, it stores characters. It can be any one of the characters defined by the [American Standard Code for Information Interchange](https://www.ascii-code.com/) (ASCII). If you ever want to have a look at it just type "ascii" in your terminal.
 
 We declare a char in the same way we declare an int but we would usually take a different default value which varies greatly:
 ```C
