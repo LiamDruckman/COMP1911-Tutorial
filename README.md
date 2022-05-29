@@ -179,7 +179,7 @@ int number = 0;
 ```
 ### Char
 
-This is the next most common data type in C and again as the name suggests it stores characters. It can be any one of the characters defined by the [American Standard Code for Information Interchange](https://www.ascii-code.com/) (ASCII)
+This is the next most common data type in C and again as the name suggests it stores characters. It can be any one of the characters defined by the [American Standard Code for Information Interchange](https://www.ascii-code.com/) (ASCII). If you ever want to have a look at it just type "ascii" in your terminal.
 
 We declare a char in the same way we declare an int but we would usually take a different default value which varies greatly:
 ```C
@@ -187,6 +187,8 @@ char character = 'a';
 ```
 
 One thing you'll notice is that we put single quotes around the 'a' character. The use of specifically single quotes instead of double quotes is important: this serves two purposes. First of all this ensures that the program knows 'a' is not a variable name, and second it performs a special operation where the character 'a' is converted to the corresponding ASCII value from the table linked above. So the real value assigned to character is 97.
+
+This gives you a clue about what the char type stores. It's actually just an integer that gets converted to a character using the ASCII table. So why do we use ints and chars separately then if they store the same things? Well they're not actually exactly the same, the int type has 4 bytes or 32 bits of space allocated to it, whereas the char type only has 1 byte or 8 bits. This is to be more space efficient as we only need 1 byte to fit all the different ASCII values (this is by design) but ints can store much, much larger numbers which is quite useful for us.
 
 ### Double
 
