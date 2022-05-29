@@ -21,17 +21,17 @@ Note: This cheatsheet has more of a focus on learning C content (read this top t
 
 ## Linux/Shell Commands
 
-Linux is an operating system developed by Linus Torvalds (you can probably tell where the name came from) and places a much greater emphasis on using command line tools to perform operations. If you're primarily a mac user, you may be in luck as both Linux and MacOS are "Unix-like" and share a lot of similarities. For Windows users however, it may be a slightly larger leap to get used to it. But regardless, once you've got a few basic commands under your belt, you'll find Linux is not nearly as misifying as it once seemed.
+Linux is an operating system developed by Linus Torvalds (you can probably tell where the name came from) and places a much greater emphasis on using command line tools to perform operations. If you're primarily a mac user, you may be in luck as both Linux and MacOS are "Unix-like" and share a lot of similarities. For Windows users however, it may be a slightly larger leap to get used to it. But regardless, once you've got a few basic commands under your belt, you'll find Linux is not nearly as mistifying as it once seemed.
 
 ### Navigation
 
 Linux uses a tree-like file system where everything is inside of a specific folder (called directories). This includes normal files and other subdirectories, allowing you to organise all your data into separate directories much like in other operating systems.
 
-In Linux the top level directory is called the root directory which has the path "/". This denotes the top of the file system and all other directories and files are contained within it.
+In Linux the highest level of directory is called the root directory which has the path "/". This denotes the top of the file system and all other directories and files are contained within it.
 
 The one we are most concerned with, however, is your home directory. This is the directory that you will start in when you open up your terminal window. It has a full path name starting from the root directory along the lines of "/import/adams/3/z5309229" but it is also assigned a special name: "~".
 
-Additionally, the command prompt in the terminal usually ends with a "\$" or "\%" so I will indicate that a command is being written in the terminal by starting the line with "\$". Any output will be written straight afterwards without the "\$".
+Additionally, the command prompt in the terminal usually ends with a "``$``" or "``%``" so I will indicate that a command is being written in the terminal by starting the line with "``$``". Any output will be written straight afterwards without the "``$``".
 
 Let's say you open up your terminal into your home directory and you want to know what files and directories are here. You would use the "ls" command and receive output something along these lines:
 
